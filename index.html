@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <h2>This Site Best Works On Desktop. Try To Click That Button On Your Mouse.</h2>
+      <div>
+            <button id="btn">catch Me If U Can !</button>
+      </div>
+      <script>
+            var btn = document.querySelector('#btn');
+            var position;
+            btn.addEventListener("mouseover", () => {
+                  position ? (position = 0) : (position = 250);
+                  btn.style.transform = `translate(${position}px,0px)`;
+                  btn.style.transform = "all 1s ease";
+            });
+      </script>
+</body>
+
+</html>
